@@ -48,6 +48,7 @@ def move(board, index, token = "X")
   end
 end
 
+
 def turn(board)
   print "Please enter 1-9:"
   index = gets.strip
@@ -56,5 +57,5 @@ def turn(board)
   if (move(board, index))
     display_board(board)
   end
-  
+
 end
