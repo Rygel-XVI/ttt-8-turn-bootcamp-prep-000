@@ -26,7 +26,8 @@ def valid_move?(board, index)
   avail = position_taken?(board, index)
   if (index_range(index) && !avail)
     return true
-  else return false
+  else 
+    return false
   end
 end
 
@@ -44,14 +45,15 @@ def move(board, index, token = "X")
   if valid_move?(board, index)
     board[index] = token
     return true
-  else return false
+  else 
+    return false
   end
 end
 
 
 def turn(board)
   counter = 0
-#  while counter < 9
+  while counter < 9
     print "Please enter 1-9:"
     index = gets.strip
     index = input_to_index(index)
@@ -61,6 +63,6 @@ def turn(board)
     else 
       turn(board)
     end
-#  end
+  end
 
 end
