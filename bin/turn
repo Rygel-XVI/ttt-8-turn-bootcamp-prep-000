@@ -7,7 +7,7 @@ puts "Welcome to Tic Tac Toe!"
 display_board(board)
 turn(board)
 
-counter = 0
-until counter == 8
-  turn(board)
-end
+#counter = 0
+#until counter == 8
+#  turn(board)
+#end
