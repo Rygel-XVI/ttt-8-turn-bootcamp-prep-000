@@ -58,6 +58,7 @@ def turn(board)
     index = input_to_index(index)
     if (move(board, index))
       display_board(board)
+      turn(board)
     else
       turn(board)
     end
