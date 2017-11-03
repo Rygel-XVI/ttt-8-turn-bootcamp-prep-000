@@ -56,6 +56,7 @@ def turn(board)
 
   if (move(board, index))
     display_board(board)
+  else turn(board)
   end
 
 end
