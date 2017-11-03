@@ -35,7 +35,8 @@ end
 def position_taken?(board, index)
   if (board[index] == "X" || board[index] == "O")
     return true
-  else return false
+  else 
+    return false
   end
 end
 
@@ -44,7 +45,8 @@ def move(board, index, token = "X")
   if valid_move?(board, index)
     board[index] = token
     return true
-  else return false
+  else 
+    return false
   end
 end
 
