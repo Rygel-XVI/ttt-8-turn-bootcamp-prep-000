@@ -51,10 +51,10 @@ end
 
 def turn(board)
   counter = 0
-  print "Please enter 1-9:"
-  index = gets.strip
-  index = input_to_index(index)
   while counter < 9
+    print "Please enter 1-9:"
+    index = gets.strip
+    index = input_to_index(index)
     if (move(board, index))
       display_board(board)
       counter += 1
